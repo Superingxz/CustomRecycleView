@@ -1,4 +1,4 @@
-package com.myz.mrecyclerview.universaladapter.recyclerview;
+package com.myz.mrecyclerview.listener;
 
 import android.view.View;
 import android.view.ViewGroup;

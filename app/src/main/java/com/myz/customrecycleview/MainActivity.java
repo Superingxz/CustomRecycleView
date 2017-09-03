@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         rv.addFooterLoadingLayout(new MFooterLoadingLayout(MainActivity.this));*/
        /* adapter =new CommonRecycleViewAdapter<String>(MainActivity.this,R.layout.item) {
             @Override
-            public void convert(ViewHolderHelper helper, String text) {
+            public void convert(BaseRecyclerViewHolder helper, String text) {
                 helper.setText(R.id.tv,"text");
             }
         };*/

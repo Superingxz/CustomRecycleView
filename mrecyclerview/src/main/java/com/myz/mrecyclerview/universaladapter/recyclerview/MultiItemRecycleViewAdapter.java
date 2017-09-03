@@ -3,8 +3,6 @@ package com.myz.mrecyclerview.universaladapter.recyclerview;
 import android.content.Context;
 import android.view.ViewGroup;
 
-import com.myz.mrecyclerview.universaladapter.ViewHolderHelper;
-
 import java.util.List;
 
 public abstract class MultiItemRecycleViewAdapter<T> extends CommonRecycleViewAdapter<T>
@@ -39,12 +37,12 @@ public abstract class MultiItemRecycleViewAdapter<T> extends CommonRecycleViewAd
     }
 
     @Override
-    public ViewHolderHelper onCreateViewHolder(ViewGroup parent, int viewType)
+    public BaseRecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {
         if (mMultiItemTypeSupport == null) return super.onCreateViewHolder(parent, viewType);
 
         int layoutId = mMultiItemTypeSupport.getLayoutId(viewType);
-        ViewHolderHelper holder = ViewHolderHelper.get(mContext, null, parent, layoutId, -1);
+        BaseRecyclerViewHolder holder = BaseRecyclerViewHolder.get(mContext, null, parent, layoutId, -1);
         setListener(parent, holder, viewType);
         return holder;
     }

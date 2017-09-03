@@ -3,7 +3,7 @@ package com.myz.mrecyclerview.universaladapter.recyclerview.support;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 
-import com.myz.mrecyclerview.universaladapter.ViewHolderHelper;
+import com.myz.mrecyclerview.universaladapter.recyclerview.BaseRecyclerViewHolder;
 import com.myz.mrecyclerview.universaladapter.recyclerview.MultiItemRecycleViewAdapter;
 import com.myz.mrecyclerview.universaladapter.recyclerview.MultiItemTypeSupport;
 
@@ -177,7 +177,7 @@ public abstract class SectionAdapter<T> extends MultiItemRecycleViewAdapter<T>
     }
 
     @Override
-    public void onBindViewHolder(ViewHolderHelper holder, int position)
+    public void onBindViewHolder(BaseRecyclerViewHolder holder, int position)
     {
         position = getIndexForPosition(position);
         if (holder.getItemViewType() == TYPE_SECTION)

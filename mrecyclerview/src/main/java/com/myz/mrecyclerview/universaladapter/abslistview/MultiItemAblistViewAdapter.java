@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.myz.mrecyclerview.universaladapter.ViewHolderHelper;
+import com.myz.mrecyclerview.universaladapter.recyclerview.BaseRecyclerViewHolder;
 
 import java.util.List;
 
@@ -56,7 +56,7 @@ public abstract class MultiItemAblistViewAdapter<T> extends CommonAblistViewAdap
 
         int layoutId = mMultiItemTypeSupport.getLayoutId(position,
                 getItem(position));
-        ViewHolderHelper viewHolder = ViewHolderHelper.get(mContext, convertView, parent,
+        BaseListViewHolder viewHolder = BaseListViewHolder.get(mContext, convertView, parent,
                 layoutId, position);
         convert(viewHolder, getItem(position));
         return viewHolder.getConvertView();

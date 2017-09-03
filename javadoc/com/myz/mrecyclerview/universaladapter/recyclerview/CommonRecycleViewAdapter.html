@@ -238,7 +238,7 @@ implements <a href="../../../../../com/myz/mrecyclerview/universaladapter/DataIO
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/CommonRecycleViewAdapter.html#convert-com.myz.mrecyclerview.universaladapter.ViewHolderHelper-T-">convert</a></span>(<a href="../../../../../com/myz/mrecyclerview/universaladapter/ViewHolderHelper.html" title="com.myz.mrecyclerview.universaladapter中的类">ViewHolderHelper</a>&nbsp;helper,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/CommonRecycleViewAdapter.html#convert-com.myz.mrecyclerview.universaladapter.recyclerview.BaseRecyclerViewHolder-T-">convert</a></span>(<a href="../../../../../com/myz/mrecyclerview/universaladapter/ViewHolderHelper.html" title="com.myz.mrecyclerview.universaladapter中的类">ViewHolderHelper</a>&nbsp;helper,
        <a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/CommonRecycleViewAdapter.html" title="CommonRecycleViewAdapter中的类型参数">T</a>&nbsp;t)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -273,7 +273,7 @@ implements <a href="../../../../../com/myz/mrecyclerview/universaladapter/DataIO
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/CommonRecycleViewAdapter.html#onBindViewHolder-com.myz.mrecyclerview.universaladapter.ViewHolderHelper-int-">onBindViewHolder</a></span>(<a href="../../../../../com/myz/mrecyclerview/universaladapter/ViewHolderHelper.html" title="com.myz.mrecyclerview.universaladapter中的类">ViewHolderHelper</a>&nbsp;holder,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/CommonRecycleViewAdapter.html#onBindViewHolder-com.myz.mrecyclerview.universaladapter.recyclerview.BaseRecyclerViewHolder-int-">onBindViewHolder</a></span>(<a href="../../../../../com/myz/mrecyclerview/universaladapter/ViewHolderHelper.html" title="com.myz.mrecyclerview.universaladapter中的类">ViewHolderHelper</a>&nbsp;holder,
                 int&nbsp;position)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
@@ -315,13 +315,13 @@ implements <a href="../../../../../com/myz/mrecyclerview/universaladapter/DataIO
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/CommonRecycleViewAdapter.html#setListener-android.view.ViewGroup-com.myz.mrecyclerview.universaladapter.ViewHolderHelper-int-">setListener</a></span>(android.view.ViewGroup&nbsp;parent,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/CommonRecycleViewAdapter.html#setListener-android.view.ViewGroup-com.myz.mrecyclerview.universaladapter.recyclerview.BaseRecyclerViewHolder-int-">setListener</a></span>(android.view.ViewGroup&nbsp;parent,
            <a href="../../../../../com/myz/mrecyclerview/universaladapter/ViewHolderHelper.html" title="com.myz.mrecyclerview.universaladapter中的类">ViewHolderHelper</a>&nbsp;viewHolder,
            int&nbsp;viewType)</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/CommonRecycleViewAdapter.html#setOnItemClickListener-com.myz.mrecyclerview.universaladapter.recyclerview.OnItemClickListener-">setOnItemClickListener</a></span>(<a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/OnItemClickListener.html" title="com.myz.mrecyclerview.universaladapter.recyclerview中的接口">OnItemClickListener</a>&nbsp;onItemClickListener)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/CommonRecycleViewAdapter.html#setOnItemClickListener-com.myz.mrecyclerview.listener.OnItemClickListener-">setOnItemClickListener</a></span>(<a href="../../../../../com/myz/mrecyclerview/universaladapter/recyclerview/OnItemClickListener.html" title="com.myz.mrecyclerview.universaladapter.recyclerview中的接口">OnItemClickListener</a>&nbsp;onItemClickListener)</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -425,7 +425,7 @@ implements <a href="../../../../../com/myz/mrecyclerview/universaladapter/DataIO
 <!--   -->
 </a>
 <h3>方法详细资料</h3>
-<a name="setOnItemClickListener-com.myz.mrecyclerview.universaladapter.recyclerview.OnItemClickListener-">
+<a name="setOnItemClickListener-com.myz.mrecyclerview.listener.OnItemClickListener-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -462,7 +462,7 @@ implements <a href="../../../../../com/myz/mrecyclerview/universaladapter/DataIO
 <pre>protected&nbsp;boolean&nbsp;isEnabled(int&nbsp;viewType)</pre>
 </li>
 </ul>
-<a name="setListener-android.view.ViewGroup-com.myz.mrecyclerview.universaladapter.ViewHolderHelper-int-">
+<a name="setListener-android.view.ViewGroup-com.myz.mrecyclerview.universaladapter.recyclerview.BaseRecyclerViewHolder-int-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -473,7 +473,7 @@ implements <a href="../../../../../com/myz/mrecyclerview/universaladapter/DataIO
                            int&nbsp;viewType)</pre>
 </li>
 </ul>
-<a name="onBindViewHolder-com.myz.mrecyclerview.universaladapter.ViewHolderHelper-int-">
+<a name="onBindViewHolder-com.myz.mrecyclerview.universaladapter.recyclerview.BaseRecyclerViewHolder-int-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -483,9 +483,9 @@ implements <a href="../../../../../com/myz/mrecyclerview/universaladapter/DataIO
                              int&nbsp;position)</pre>
 </li>
 </ul>
-<a name="convert-com.myz.mrecyclerview.universaladapter.ViewHolderHelper-java.lang.Object-">
+<a name="convert-com.myz.mrecyclerview.universaladapter.recyclerview.BaseRecyclerViewHolder-java.lang.Object-">
 <!--   -->
-</a><a name="convert-com.myz.mrecyclerview.universaladapter.ViewHolderHelper-T-">
+</a><a name="convert-com.myz.mrecyclerview.universaladapter.recyclerview.BaseRecyclerViewHolder-T-">
 <!--   -->
 </a>
 <ul class="blockList">

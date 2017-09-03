@@ -1,4 +1,4 @@
-package com.kingteller.mrecyclerview;
+package com.myz.mrecyclerview.listener;
 
 import android.animation.Animator;
 

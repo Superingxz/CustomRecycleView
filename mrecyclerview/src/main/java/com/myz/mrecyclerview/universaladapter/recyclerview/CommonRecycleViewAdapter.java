@@ -13,8 +13,8 @@ import android.view.animation.LinearInterpolator;
 import com.myz.mrecyclerview.animation.AlphaInAnimation;
 import com.myz.mrecyclerview.animation.BaseAnimation;
 import com.myz.mrecyclerview.bean.PageBean;
+import com.myz.mrecyclerview.listener.OnItemClickListener;
 import com.myz.mrecyclerview.universaladapter.DataIO;
-import com.myz.mrecyclerview.universaladapter.ViewHolderHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Created by zhy on 16/4/9.
  */
-public abstract class CommonRecycleViewAdapter<T> extends RecyclerView.Adapter<ViewHolderHelper> implements DataIO<T>
+public abstract class CommonRecycleViewAdapter<T> extends RecyclerView.Adapter<BaseRecyclerViewHolder> implements DataIO<T>
 {
     protected Context mContext;
     protected int mLayoutId;
@@ -62,9 +62,9 @@ public abstract class CommonRecycleViewAdapter<T> extends RecyclerView.Adapter<V
     }
 
     @Override
-    public ViewHolderHelper onCreateViewHolder(final ViewGroup parent, int viewType)
+    public BaseRecyclerViewHolder onCreateViewHolder(final ViewGroup parent, int viewType)
     {
-        ViewHolderHelper viewHolder = ViewHolderHelper.get(mContext, null, parent, mLayoutId, -1);
+        BaseRecyclerViewHolder viewHolder = BaseRecyclerViewHolder.get(mContext, null, parent, mLayoutId, -1);
         setListener(parent, viewHolder, viewType);
         return viewHolder;
     }
@@ -80,7 +80,7 @@ public abstract class CommonRecycleViewAdapter<T> extends RecyclerView.Adapter<V
     }
 
 
-    protected void setListener(final ViewGroup parent, final ViewHolderHelper viewHolder, int viewType)
+    protected void setListener(final ViewGroup parent, final BaseRecyclerViewHolder viewHolder, int viewType)
     {
         if (!isEnabled(viewType)) return;
         viewHolder.getConvertView().setOnClickListener(new View.OnClickListener()
@@ -113,7 +113,7 @@ public abstract class CommonRecycleViewAdapter<T> extends RecyclerView.Adapter<V
     }
 
     @Override
-    public void onBindViewHolder(ViewHolderHelper holder, int position)
+    public void onBindViewHolder(BaseRecyclerViewHolder holder, int position)
     {
         holder.updatePosition(position);
         //添加动画
@@ -121,7 +121,7 @@ public abstract class CommonRecycleViewAdapter<T> extends RecyclerView.Adapter<V
         convert(holder, mDatas.get(position));
     }
 
-    public abstract void convert(ViewHolderHelper helper, T t);
+    public abstract void convert(BaseRecyclerViewHolder helper, T t);
 
 
 

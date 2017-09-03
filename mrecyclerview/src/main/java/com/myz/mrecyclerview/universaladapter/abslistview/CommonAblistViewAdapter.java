@@ -8,7 +8,6 @@ import android.widget.BaseAdapter;
 
 import com.myz.mrecyclerview.bean.PageBean;
 import com.myz.mrecyclerview.universaladapter.DataIO;
-import com.myz.mrecyclerview.universaladapter.ViewHolderHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,13 +58,13 @@ public abstract class CommonAblistViewAdapter<T> extends BaseAdapter implements 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent)
 	{
-		ViewHolderHelper holder = ViewHolderHelper.get(mContext, convertView, parent,
+		BaseListViewHolder holder = BaseListViewHolder.get(mContext, convertView, parent,
 				layoutId, position);
 		convert(holder, getItem(position));
 		return holder.getConvertView();
 	}
 
-	public abstract void convert(ViewHolderHelper holder, T t);
+	public abstract void convert(BaseListViewHolder holder, T t);
 
 
 
