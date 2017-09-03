@@ -1,10 +1,14 @@
-com.kingteller.mrecyclerview
 com.kingteller.mrecyclerview.utils
 com.myz.mrecyclerview.animation
+com.myz.mrecyclerview.anims.adapters
+com.myz.mrecyclerview.anims.animators
+com.myz.mrecyclerview.anims.animators.holder
 com.myz.mrecyclerview.baseadapter
 com.myz.mrecyclerview.bean
+com.myz.mrecyclerview.listener
 com.myz.mrecyclerview.universaladapter
 com.myz.mrecyclerview.universaladapter.abslistview
 com.myz.mrecyclerview.universaladapter.recyclerview
 com.myz.mrecyclerview.universaladapter.recyclerview.support
 com.myz.mrecyclerview.utils
+com.myz.mrecyclerview.wrapper
