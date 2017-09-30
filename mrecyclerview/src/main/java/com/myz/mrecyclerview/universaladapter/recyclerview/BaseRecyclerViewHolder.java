@@ -45,8 +45,7 @@ public class BaseRecyclerViewHolder extends RecyclerView.ViewHolder {
     public static BaseRecyclerViewHolder get(Context context, View convertView,
                                              ViewGroup parent, int layoutId, int position) {
         if (convertView == null) {
-            View itemView = LayoutInflater.from(context).inflate(layoutId, parent,
-                    false);
+            View itemView = LayoutInflater.from(context).inflate(layoutId, parent, false);
             BaseRecyclerViewHolder holder = new BaseRecyclerViewHolder(context, itemView, parent, position);
             holder.mLayoutId = layoutId;
             return holder;

@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">CustomRecycleView</string>
+
+    <!-- 新闻 -->
+    <string name="photo_collections">图集：%1$s</string>
+    <string name="news_from">%1$s %2$s</string>
+    <string name="photo_detail_title">%1$d/%2$d　%3$s</string>
+    <string name="web_view">WebView</string>
+    <string name="photo_news">图片新闻</string>
+    <string name="browser">用浏览器打开</string>
+    <string name="share">分享</string>
+    <string name="share_contents">来自「AndroidFire」的分享：%1$s %2$s</string>
+
+    <!-- 共享过度动画 -->
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="loading">正在加载...</string>
+    <string name="no_net">无网络</string>
+    <string name="net_error">网络错误</string>
 </resources>
